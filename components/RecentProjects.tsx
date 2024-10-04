@@ -1,11 +1,20 @@
-import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/Pin";
-import { projects } from "@/data";
+import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 
-const RecentProjects = () => {
+interface Project {
+  _id: number;
+  title: string;
+  des: string;
+  img: string;
+  iconLists: string[];
+  link: string;
+}
+
+const RecentProjects = ({projects}:{projects:Project[]}) => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -14,24 +23,28 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+            key={item._id}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <PinContainer title={item?.link} href={item?.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    // src={item.img}
+                    src={urlFor(item.img).url()}
+                    alt="bgimg"
+                    height={400}
+                    width={384}
+                  />
                 </div>
-                <img
-                  src={item.img}
+                {/* <img
+                  // src={item.img}
+                  src={urlFor(item.img).url()}
                   alt="cover"
                   className="z-10 absolute bottom-0"
-                />
+                /> */}
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -58,7 +71,12 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img
+                        // src={icon}
+                         src={urlFor(icon).url()}
+                        alt="icon5"
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>

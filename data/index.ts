@@ -49,12 +49,14 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently building a NextJS 14 portfolio",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      // img: "/b5.svg",
+       img: "/gridimage.png",
+
       spareImg: "/grid.svg",
     },
     {
@@ -69,6 +71,40 @@ export const navItems = [
     },
   ];
   
+ 
+  
+  export const testimonials = [
+    {
+      quote:
+        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      name: "Michael Johnson",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      name: "Michael Johnson",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      name: "Michael Johnson",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      name: "Michael Johnson",
+      title: "Director of AlphaStream Technologies",
+    },
+    {
+      quote:
+        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      name: "Michael Johnson",
+      title: "Director of AlphaStream Technologies",
+    },
+  ];
   export const projects = [
     {
       id: 1,
@@ -103,40 +139,6 @@ export const navItems = [
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
   export const companies = [
     {
       id: 1,
@@ -180,7 +182,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
+      title: "Mobile App Dev",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
@@ -188,14 +190,14 @@ export const navItems = [
     {
       id: 3,
       title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      desc: "Led the dev of a web app for a client, from initial concept to deployment.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
       title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      desc: "Developed and maintained user-facing features using modern frontend technologies .",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -205,13 +207,17 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link:"https://github.com/ajeigbepaul"
+    
     },
     {
       id: 2,
       img: "/twit.svg",
+      link:"https://x.com/PaulAjeigbe"
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/paul-ajeigbe/"
     },
   ];
