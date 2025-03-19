@@ -31,7 +31,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Bringing Seamless Experiences to the Web"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I am Ajeigbe Paul a Next Js and React Native developer in Lagos, Nigeria.</p>
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I am Ajeigbe Paul a Software Engineer in Lagos, Nigeria.</p>
           <MagicButton
           title="Show my work"
           icon={<FaLocationArrow/>}
