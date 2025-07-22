@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -33,10 +34,17 @@ const Hero = () => {
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I am Ajeigbe Paul a Software Engineer in Lagos, Nigeria.</p>
           <MagicButton
-          title="Show my work"
-          icon={<FaLocationArrow/>}
-          position="right"
-          
+            title="Show my work"
+            icon={<FaLocationArrow />}
+            position="right"
+            handleClick={() => {
+              if (typeof window !== "undefined") {
+                const section = document.getElementById("projects");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
           />
         </div>
       </div>

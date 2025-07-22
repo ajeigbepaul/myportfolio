@@ -1,14 +1,21 @@
 
+import dynamic from "next/dynamic";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
-import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import Process from "@/components/Process";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import { getCompany, getProjects } from "@/sanity/actions";
+
+const Grid = dynamic(() => import("@/components/Grid"), {
+  ssr: false,
+});
+
+const Process = dynamic(() => import("@/components/Process"), {
+  ssr: false,
+});
 export const revalidate = 60;
 export default async function Home() {
   const project = await getProjects();
